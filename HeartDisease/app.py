@@ -1,11 +1,13 @@
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 import joblib
 
+BASE_DIR = Path(__file__).resolve().parent
 
-model = joblib.load("knn_HeartDisease.pkl")
-scaler=joblib.load("sccaler_HeartDisease.pkl")
-Expected_columns=joblib.load("column_Heart.pkl")
+model = joblib.load(BASE_DIR / "knn_HeartDisease.pkl")
+scaler = joblib.load(BASE_DIR / "sccaler_HeartDisease.pkl")
+Expected_columns = joblib.load(BASE_DIR / "column_Heart.pkl")
 st.title("Heart Strock prediction")
 st.markdown("provide the following details")
 
