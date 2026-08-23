@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent
 model = joblib.load(BASE_DIR / "knn_HeartDisease.pkl")
 scaler = joblib.load(BASE_DIR / "sccaler_HeartDisease.pkl")
 Expected_columns = joblib.load(BASE_DIR / "column_Heart.pkl")
-st.title("Heart Strock prediction")
+st.title("HEART STROKE PREDICTION")
 st.markdown("provide the following details")
 
 age=st.slider("age",18,100,40)
