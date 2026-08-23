@@ -19,7 +19,7 @@ Cholesterol=st.slider("Cholesterol",100,600,150)
 FastingBS=st.selectbox("FastingBS",['0','1'])
 RestingECG=st.selectbox("RestingECG",['Normal', 'ST', 'LVH'])
 maxHR=st.slider("MaxHR",71,220,100)
-ExerciseAngina=st.selectbox("ExerciseAngina",['y','n'])
+ExerciseAngina=st.selectbox("ExerciseAngina",['yes','no'])
 Oldpeak=st.slider('Oldpeak',0.0,5.5,2.2)
 st_slope=st.selectbox("ST_slope",['Up', 'Flat', 'Down'])
 
